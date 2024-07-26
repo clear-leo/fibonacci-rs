@@ -2,6 +2,8 @@ use std::io;
 
 
 fn main() {
+    println!("Input the nth number for the fibonacci formula:");
+
     let mut times = String::new();
     io::stdin().read_line(&mut times);
     let times: f32 = times.trim().parse().expect("Please enter a number!"); 

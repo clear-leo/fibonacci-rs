@@ -1,12 +1,10 @@
-use std::io;
+use shittyinput;
 
 
 fn main() {
     println!("Input the nth number for the fibonacci formula:");
 
-    let mut times = String::new();
-    io::stdin().read_line(&mut times);
-    let times: f32 = times.trim().parse().expect("Please enter a number!"); 
+    let times = shittyinput::float::f32();
 
     println!("{}", fibonacci(times));
 }

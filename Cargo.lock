@@ -3,5 +3,14 @@
 version = 3
 
 [[package]]
-name = "branches"
+name = "fibonaci"
 version = "0.1.0"
+dependencies = [
+ "shittyinput",
+]
+
+[[package]]
+name = "shittyinput"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fe785ad45e6562a04db58a0373a5ac757b0aa0019c3292f81453148302807e11"
